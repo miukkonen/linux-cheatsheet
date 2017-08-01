@@ -76,11 +76,14 @@ Writes the files empty. Don't remove with rm! The files should be readable and w
 ### Scheduled tasks (CRON)
 
 Shows tasks:
+
 	crontab -l
 
 Shows tasks of root user:
+	
 	sudo crontab -l
 
 Edit my tasks:
+	
 	crontab -e
 
