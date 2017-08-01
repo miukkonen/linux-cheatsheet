@@ -15,9 +15,13 @@
 
 ### Check the drive information
 	sudo parted -l
+
 or
+
 	df -h
+
 or
+
 	sudo fdisk -l
 
 ### RAM situation
