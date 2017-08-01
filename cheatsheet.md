@@ -65,4 +65,4 @@ Writes the files empty. Don't remove with rm! The files should be readable and w
 ### Sending email on the command line
 
 	echo "This is my story." > note.txt
-	echo "Subject: Story" | cat - note.txt | sendmail -F Pacius mikko.oikkonen@bitway.fi
+	echo "Subject: Story" | cat - note.txt | sendmail -F Sender-name mikko.oikkonen@bitway.fi
