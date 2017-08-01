@@ -2,13 +2,13 @@
 
 
 ## Make a tar -package
- tar -cvzf package.tar.gz filename
+ 	tar -cvzf package.tar.gz filename
 
-## Unzip tar package
+### Unzip tar package
 	tar -zxvf package.tar.gz
 
-## What distro and version do I have?
-cat /etc/\*-release
+#### What distro and version do I have?
+	cat /etc/\*-release
 
 ## What kernel do I have?
 dpkg --list | grep linux-image
