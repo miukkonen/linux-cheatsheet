@@ -16,7 +16,10 @@
 ### Check the drive information
 	sudo parted -l
 
+
 	df -h
+
+
 
 	sudo fdisk -l
 
@@ -27,8 +30,7 @@ Note! "Free" means memory that is empty, "available" means something that has ca
 
 
 ### What is my IP to the outside world?
-	curl -s ipinfo.io/ip
+	´curl -s ipinfo.io/ip´
 
-
-	curl ident.me
+	`curl ident.me`
 
