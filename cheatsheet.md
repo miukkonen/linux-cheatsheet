@@ -31,7 +31,9 @@ Note! "Free" means memory that is empty, "available" means something that has ca
 
 ### What is my IP to the outside world?
 	curl -s ipinfo.io/ip
+
 or
+
 	curl ident.me
 	
 ### Changing the hostname
