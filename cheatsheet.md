@@ -20,7 +20,7 @@ or
 
 	df -h
 
-or
+or maybe the best option:
 
 	sudo fdisk -l
 
