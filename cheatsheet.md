@@ -53,7 +53,6 @@ Change the hostname in these files and reboot
 	sudo du -hs * | sort -rh | head -5
 
 ### Safe way to empty log files in Ubuntu
-
 	sudo su
 	cd /var/log
 	> ufw.log
@@ -63,6 +62,25 @@ Change the hostname in these files and reboot
 Writes the files empty. Don't remove with rm! The files should be readable and writable with other processes.
 
 ### Sending email on the command line
-
 	echo "This is my story." > note.txt
 	echo "Subject: Story" | cat - note.txt | sendmail -F Sender-name mikko.oikkonen@bitway.fi
+
+
+### Add a user
+	adduser pumpeli
+
+### Adding user to a group
+	adduser pumpeli git
+
+
+### Scheduled tasks (CRON)
+
+Shows tasks:
+	crontab -l
+
+Shows tasks of root user:
+	sudo crontab -l
+
+Edit my tasks:
+	crontab -e
+
