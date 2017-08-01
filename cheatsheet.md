@@ -87,3 +87,19 @@ Edit my tasks:
 	
 	crontab -e
 
+### The packages requiring system restart
+	cat /var/run/reboot-required.pkgs
+
+### Is my machine 32 or 64?
+	grep --color=always -iw lm /proc/cpuinfo
+	
+If one of the flags is "lm" (long mode) the processor is 64 byte type
+
+### Is my operating system 32 or 64?
+	uname -a
+
+It's possible to have 32-byte system on a 64-byte machine.
+
+### What software packages do I have on my Ubuntu system?
+	sudo apt list --installed
+
