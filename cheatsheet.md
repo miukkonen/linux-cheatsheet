@@ -43,19 +43,16 @@ or
 
 Change the hostname in these files and reboot
 
-
-
-Palomuuriasetukset
+### Palomuuriasetukset
 
 	iptables -L
 
 
-Näytä suurimmat tiedostot/hakemistot
+### Largest files taking up the most disk space
 
 	sudo du -hs * | sort -rh | head -5
 
-
-Lokitiedostojen tyhjentäminen turvallisesti
+### Safe way to empty log files in Ubuntu
 
 	sudo su
 	cd /var/log
@@ -63,19 +60,9 @@ Lokitiedostojen tyhjentäminen turvallisesti
 	> kern.log
 	> syslog
 
-	(mennään roottina kirjoittamaan tiedostot tyhjiksi. Ei saa tehdä rm -käskyllä! Tiedostojen pitää olla koko ajan olemassa ja muiden prosessien saatavilla)
+Writes the files empty. Don't remove with rm! The files should be readable and writable with other processes.
 
+### Sending email on the command line
 
-Sähköpostin lähetys komentoriviltä
-
-	echo "Tämä on asiani" > note.txt
-	echo "Subject: Asiaa" | cat - note.txt | sendmail -F Pacius mikko.oikkonen@intrin.fi
-
-
-
-
-
-
-
-
-
+	echo "This is my story." > note.txt
+	echo "Subject: Story" | cat - note.txt | sendmail -F Pacius mikko.oikkonen@bitway.fi
