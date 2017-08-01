@@ -30,3 +30,46 @@ Note! "Free" means memory that is empty, "available" means something that has ca
 
 	curl ident.me
 	
+### Changing the hostname
+
+	sudo vim /etc/hostname
+	sudo vim /etc/hosts
+
+Change the hostname in these files and reboot
+
+
+
+Palomuuriasetukset
+
+	iptables -L
+
+
+Näytä suurimmat tiedostot/hakemistot
+
+	sudo du -hs * | sort -rh | head -5
+
+
+Lokitiedostojen tyhjentäminen turvallisesti
+
+	sudo su
+	cd /var/log
+	> ufw.log
+	> kern.log
+	> syslog
+
+	(mennään roottina kirjoittamaan tiedostot tyhjiksi. Ei saa tehdä rm -käskyllä! Tiedostojen pitää olla koko ajan olemassa ja muiden prosessien saatavilla)
+
+
+Sähköpostin lähetys komentoriviltä
+
+	echo "Tämä on asiani" > note.txt
+	echo "Subject: Asiaa" | cat - note.txt | sendmail -F Pacius mikko.oikkonen@intrin.fi
+
+
+
+
+
+
+
+
+
