@@ -8,7 +8,7 @@
 	tar -zxvf package.tar.gz
 
 ### What distro and version do I have?
-	cat /etc/\*-release
+	cat /etc/*-release
 
 ### What kernel do I have?
 	dpkg --list | grep linux-image
