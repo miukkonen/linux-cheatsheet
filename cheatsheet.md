@@ -1,38 +1,34 @@
 # Linux cheatsheet
 
 
-## Make a tar -package
+### Make a tar -package
  	tar -cvzf package.tar.gz filename
 
 ### Unzip tar package
 	tar -zxvf package.tar.gz
 
-#### What distro and version do I have?
+### What distro and version do I have?
 	cat /etc/\*-release
 
-## What kernel do I have?
-dpkg --list | grep linux-image
+### What kernel do I have?
+	dpkg --list | grep linux-image
 
-## Check the drive information
-sudo parted -l
-  or
-df -h
-  or maybe the best option:
-sudo fdisk -l
+### Check the drive information
+	sudo parted -l
 
-## RAM situation
-free -mth
+	df -h
 
-Muisti
+	sudo fdisk -l
 
+### RAM situation
 	free -mth
 
-	(huom. "free" tarkoittaa muistia jossa ei ole mitään, "available" tarkoittaa muistia jossa on cachea ja buffereita, ja jossa siis on jotain, mutta joka voidaan tarvittaessa jyrätä)
+Note! "Free" means memory that is empty, "available" means something that has cache and buffers, but could be used when needed.
 
 
-Mikä on koneen ulospäin näkyvä ip-osoite? (intrinsicin verkon ulkopuolelle näkyvä)
-
+### What is my IP to the outside world?
 	curl -s ipinfo.io/ip
-		tai
+
+
 	curl ident.me
 
